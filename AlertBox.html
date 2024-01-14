@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup centre">
+        <div class="icon">
+            <i class="fa fa-check"></i>
+        </div>
+
+        <div class="title">
+            Success....!!
+        </div>
+
+        <div class="description">
+            <p> Lorem ipsum dolor sit amet consectetur <br>
+                ab quae nemo voluptatem ad non, <br>
+                numquam excepturi consequuntur
+            </p>
+        </div>
+
+        <div class="dissmiss-btn">
+            <button id="dismiss">Dismiss..</button>
+        </div>
+    </div>
+
+    <div class="center">
+        <button id="btn">Open Popup</button>
+    </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            document.getElementsByClassName("centre")[0].classList.add("active");
+        });
+        document.getElementById("dismiss").addEventListener("click", function () {
+            document.getElementsByClassName("centre")[0].classList.remove("active");
+        });
+
+    </script>
+</body>
+
+</html>
